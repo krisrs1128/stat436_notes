@@ -1,0 +1,20 @@
+project:
+  type: website
+
+website:
+  title: "STAT 436 Notes"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: documents.qmd
+        text: Documents
+    right:
+      - icon: github
+        href: https://github.com/krisrs1128/data_visualization_notes
+  
+format:
+  html:
+    theme: cosmo
+    css: style.css
+    toc: true
