@@ -90,7 +90,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <!--radix_placeholder_meta_tags-->
   <title>Statistical Data Visualization</title>
 
-  <meta property="description" itemprop="description" content="STAT 479 Spring 2021"/>
+  <meta property="description" itemprop="description" content="University of Wisconsin-Madison"/>
 
 
   <meta name="article:author" content="Kris Sankaran"/>
@@ -98,20 +98,20 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
   <meta property="og:title" content="Statistical Data Visualization"/>
   <meta property="og:type" content="article"/>
-  <meta property="og:description" content="STAT 479 Spring 2021"/>
+  <meta property="og:description" content="University of Wisconsin-Madison"/>
   <meta property="og:locale" content="en_US"/>
   <meta property="og:site_name" content="Statistical Data Visualization"/>
 
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
   <meta property="twitter:title" content="Statistical Data Visualization"/>
-  <meta property="twitter:description" content="STAT 479 Spring 2021"/>
+  <meta property="twitter:description" content="University of Wisconsin-Madison"/>
 
   <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","site","author","description"]}},"value":[{"type":"character","attributes":{},"value":["Statistical Data Visualization"]},{"type":"character","attributes":{},"value":["distill::distill_website"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","affiliation"]}},"value":[{"type":"character","attributes":{},"value":["Kris Sankaran"]},{"type":"character","attributes":{},"value":["University of Wisconsin-Madison"]}]}]},{"type":"character","attributes":{},"value":["STAT 479 Spring 2021"]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","site","author","description"]}},"value":[{"type":"character","attributes":{},"value":["Statistical Data Visualization"]},{"type":"character","attributes":{},"value":["distill::distill_website"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","affiliation"]}},"value":[{"type":"character","attributes":{},"value":["Kris Sankaran"]},{"type":"NULL"}]}]},{"type":"character","attributes":{},"value":["University of Wisconsin-Madison"]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   <!--radix_placeholder_navigation_in_header-->
@@ -2117,6 +2117,52 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
   @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono&display=swap');
 
+  /* Hide dates in post listings for book-like appearance */
+  .posts-list .post-date,
+  .post-metadata .post-date,
+  .distill-site-nav .post-date,
+  .listing .dt-published {
+    display: none !important;
+  }
+
+  /* Custom styles for book-like post listing */
+  .posts-list {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .post-item {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #e0e0e0;
+  }
+
+  .post-item:last-child {
+    border-bottom: none;
+  }
+
+  .post-item h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.3rem;
+  }
+
+  .post-item h3 a {
+    color: #333;
+    text-decoration: none;
+  }
+
+  .post-item h3 a:hover {
+    color: #0066cc;
+    text-decoration: underline;
+  }
+
+  .post-description {
+    color: #666;
+    font-style: italic;
+    margin-bottom: 0;
+    line-height: 1.5;
+  }
+
   body {
     font-family: "Lato";
     /*color: #1f1f1f;*/
@@ -2312,7 +2358,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Statistical Data Visualization","description":"STAT 479 Spring 2021","authors":[{"author":"Kris Sankaran","authorURL":"#","affiliation":"University of Wisconsin-Madison","affiliationURL":"#","orcidID":""}]}
+{"title":"Statistical Data Visualization","description":"University of Wisconsin-Madison","authors":[{"author":"Kris Sankaran","authorURL":"#","affiliation":"&nbsp;","affiliationURL":"#","orcidID":""}]}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -2339,11 +2385,11 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 <!--radix_placeholder_categories-->
 <!--/radix_placeholder_categories-->
-<p><p>STAT 479 Spring 2021</p></p>
+<p><p>University of Wisconsin-Madison</p></p>
 </div>
 
 <div class="d-byline">
-  Kris Sankaran  (University of Wisconsin-Madison)
+  Kris Sankaran  
   
 
 </div>
@@ -2353,18 +2399,18 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <nav class="l-text toc figcaption" id="TOC">
 <h3>Contents</h3>
 <ul>
-<li><a href="#readings" id="toc-readings">Readings</a></li>
-<li><a href="#lectures" id="toc-lectures">Lectures</a></li>
+<li><a href="#background-readings" id="toc-background-readings">Background Readings</a></li>
 </ul>
 </nav>
 </div>
-<p>The official syllabus, which gives requirements, learning objectives, and
-grading mechanisms, is available
-<a href="https://canvas.wisc.edu/courses/243146/files/17520097?module_item_id=3538748">here</a>.
-This website only includes links to the reading and lecture content – the
-course structure is mapped out fully on the <a href="https://canvas.wisc.edu/courses/243146">Canvas
-homepage</a>.</p>
-<h2 id="readings">Readings</h2>
+<p>This website only includes links to the reading and lecture content – the
+course assignments, recordings, and discussions are mapped out fully on the
+Canvas homepage.</p>
+<h2 id="background-readings">Background Readings</h2>
+<p>Course notes are listed <a href="notes.html">here</a>. Source code and links to recorded
+videos are listed at the top of each set of lecture notes. While the notes are
+required reading, the background texts below are not. We have included them here
+in case you would like to read more deeply into topics introduced in the class.</p>
 <table>
 <colgroup>
 <col style="width: 20%" />
@@ -2375,44 +2421,34 @@ homepage</a>.</p>
 <tr class="header">
 <th>Week</th>
 <th>Topic</th>
-<th>Reading</th>
+<th>Optional Reading</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td>1 <br/> <img width=200 src="assets/encoding.png"/></td>
 <td>Marks and Channels</td>
-<td>(1) <a href="https://rafalab.github.io/dsbook/ggplot2.html">Introduction to Data Science: Chapter 7</a> <br/> (2) <a href="https://observablehq.com/@uwdata/data-types-graphical-marks-and-visual-encoding-channels?collection=@uwdata/visualization-curriculum">Data Types, Graphical Marks, and Visual Encoding Channels</a></td>
+<td>(1) <a href="https://rafalab.github.io/dsbook/ggplot2.html">Introduction to Data Science: Chapter 7</a> <br/> (2) <a href="https://rafalab.github.io/dsbook/ggplot2.html">Fundamentals of Data Visualization: Chapters 2</a> <br/> (3) <a href="http://giorgialupi.com/data-humanism-my-manifesto-for-a-new-data-wold">Data Humanism</a></td>
 </tr>
 <tr class="even">
-<td>1 (optional)</td>
-<td></td>
-<td>(1) <a href="http://giorgialupi.com/data-humanism-my-manifesto-for-a-new-data-wold">Data Humanism</a></td>
-</tr>
-<tr class="odd">
-<td>2 <br/> <img width=250 src="assets/faceting.png"/></td>
-<td>Faceting and Layout</td>
-<td>(1) <a href="https://rafalab.github.io/dsbook/gapminder.html">Introduction to Data Science: Chapter 9.1 - 9.3, 9.7</a><br/> (2) <a href="https://observablehq.com/@uwdata/multi-view-composition?collection=@uwdata/visualization-curriculum">Multi-View Composition</a></td>
-</tr>
-<tr class="even">
-<td>3 <br/> <img width=200 src="assets/interaction.png"/></td>
-<td>Interaction</td>
-<td>(1) <a href="https://search.library.wisc.edu/catalog/9911196629502121">Visualization Analysis and Design: Chapter 12.1 - 12.3, 13.1 - 13.3</a><br/> (2) <a href="https://observablehq.com/@uwdata/interaction?collection=@uwdata/visualization-curriculum">Interaction</a></td>
-</tr>
-<tr class="odd">
-<td>3 (optional)</td>
-<td></td>
-<td><a href="http://worrydream.com/LadderOfAbstraction/">Up and Down the Ladder of Abstraction</a></td>
-</tr>
-<tr class="even">
-<td>4 <br/> <img width=200 src="assets/tidy.png"/></td>
+<td>2 <br/> <img width=250 src="assets/tidy.png"/></td>
 <td>Data Wrangling</td>
-<td><a href="https://r4ds.had.co.nz">R for Data Science: Chapter 12</a></td>
+<td>(1) <a href="https://r4ds.had.co.nz/tidy-data.html">R for Data Science: Chapter 12</a><br/> (2) <a href="https://clauswilke.com/dataviz/directory-of-visualizations.html">Fundamentals of Data Visualization: Chapter 5</a></td>
+</tr>
+<tr class="odd">
+<td>3 <br/> <img width=200 src="assets/faceting.png"/></td>
+<td>Faceting and Layout</td>
+<td>(1) <a href="https://clauswilke.com/dataviz/multi-panel-figures.html">Fundamentals of Data Visualization: Chapter 21</a><br/> (2) <a href="https://rafalab.github.io/dsbook/gapminder.html">Introduction to Data Science: Chapter 9.1 - 9.3, 9.7</a></td>
+</tr>
+<tr class="even">
+<td>4 <br/> <img width=200 src="assets/interaction.png"/></td>
+<td>Interaction I</td>
+<td>(1) <a href="https://mastering-shiny.org/basic-reactivity.html">Mastering Shiny: Chapters 3, 4</a> <br/> (2) <a href="https://search.library.wisc.edu/catalog/9911196629502121">Visualization Analysis and Design: Chapter 12.1 - 12.3, 13.1 - 13.3</a> <br/> (3) <a href="http://worrydream.com/LadderOfAbstraction/">Up and Down the Ladder of Abstraction</a></td>
 </tr>
 <tr class="odd">
 <td>5 <br/> <img width=200 src="assets/diagnostics.png"/></td>
-<td>Quality Checking</td>
-<td>(1) <a href="https://naniar.njtierney.com/articles/getting-started-w-naniar.html">Getting Started with naniar</a> <br/> (2) <a href="https://idl.cs.washington.edu/files/2012-Profiler-AVI.pdf">Profiler: Integrated Statistical Analysis and Visualization for Data Quality Assessment</a></td>
+<td>Interaction II</td>
+<td>(1) <a href="https://mastering-shiny.org/action-graphics.html?q=time%20ser#action-graphics">Mastering Shiny: Chapter 7</a> <br/> (2) <a href="https://emilyriederer.github.io/demo-crosstalk/tutorial/tutorial-rmd.html">Crosstalk tutorial</a></td>
 </tr>
 <tr class="even">
 <td>6 <br/> <img width=200 src="assets/ts.png"/></td>
@@ -2442,7 +2478,7 @@ homepage</a>.</p>
 <tr class="odd">
 <td>11 <br/> <img width=200 src="assets/dimred2.png"/></td>
 <td>Dimensionality Reduction II</td>
-<td>(1) <a href="https://www.tidytextmining.com/topicmodeling.html">Text mining with R: Chapter 6</a> <br/> (3) <a href="https://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1006599">Visualizing the structure of RNA-seq expression data using grade of membership models</a></td>
+<td>(1) <a href="https://www.tidytextmining.com/topicmodeling.html">Text mining with R: Chapter 6</a> <br/> (2) <a href="https://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1006599">Visualizing the structure of RNA-seq expression data using grade of membership models</a></td>
 </tr>
 <tr class="even">
 <td>12 <br/> <img width=200 src="assets/supervised.png"/></td>
@@ -2451,29 +2487,16 @@ homepage</a>.</p>
 </tr>
 <tr class="odd">
 <td>13 <br/> <img width=200 src="assets/dl.png"/></td>
-<td>Visualizing Deep Learning Models</td>
-<td>(1) <a href="https://distill.pub/2016/handwriting/">Four Experiments in Handwriting with a Neural Network</a> <br/> (2) <a href="https://jjallaire.github.io/deep-learning-with-r-notebooks/notebooks/5.4-visualizing-what-convnets-learn.nb.html">Visualizing what convnets learn</a></td>
+<td>Deep Learning Models</td>
+<td>(1) <a href="https://distill.pub/2016/handwriting/">Four Experiments in Handwriting with a Neural Network</a> <br/> (2) <a href="https://jjallaire.github.io/deep-learning-with-r-notebooks/notebooks/5.4-visualizing-what-convnets-learn.nb.html">Visualizing what convnets learn</a> <br/> (3) <a href="doi.org/10.1073/pnas.1807184115">Agency plus automation: Designing artificial intelligence into interactive systems</a></td>
 </tr>
 <tr class="even">
-<td>13 (optional)</td>
-<td></td>
-<td><a href="https://www-proquest-com.ezproxy.library.wisc.edu/docview/1626773318/E4C6F4FD50AF4437PQ/1?accountid=465">Automation Makes Us Dumb</a></td>
-</tr>
-<tr class="odd">
 <td>14 <br/> <img width=200 src="assets/community.png"/></td>
 <td>Conclusion</td>
-<td>(1) <a href="https://www.datasketch.es/project/655-frustrations-doing-data-visualization">655 Frustrations of Doing Data Visualization</a> <br/> (2) <a href="https://simplystatistics.org/2019/04/17/tukey-design-thinking-and-better-questions/">Tukey, Design Thinking, and Better Questions</a></td>
-</tr>
-<tr class="even">
-<td>14 (optional)</td>
-<td></td>
-<td><a href="https://datavis.ca/papers/hbook.pdf">A Brief History of Data Visualization</a></td>
+<td>(1) <a href="https://www.datasketch.es/project/655-frustrations-doing-data-visualization">655 Frustrations of Doing Data Visualization</a> <br/> (2) <a href="https://simplystatistics.org/2019/04/17/tukey-design-thinking-and-better-questions/">Tukey, Design Thinking, and Better Questions</a> <br/> (3) <a href="https://datavis.ca/papers/hbook.pdf">A Brief History of Data Visualization</a></td>
 </tr>
 </tbody>
 </table>
-<h2 id="lectures">Lectures</h2>
-<p>Notes are listed <a href="notes.html">here</a>. Source code and links to recorded videos
-are listed at the top of each set of lecture notes.</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->

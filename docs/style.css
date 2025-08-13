@@ -4,6 +4,52 @@
 
 @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono&display=swap');
 
+/* Hide dates in post listings for book-like appearance */
+.posts-list .post-date,
+.post-metadata .post-date,
+.distill-site-nav .post-date,
+.listing .dt-published {
+  display: none !important;
+}
+
+/* Custom styles for book-like post listing */
+.posts-list {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.post-item {
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.post-item:last-child {
+  border-bottom: none;
+}
+
+.post-item h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.3rem;
+}
+
+.post-item h3 a {
+  color: #333;
+  text-decoration: none;
+}
+
+.post-item h3 a:hover {
+  color: #0066cc;
+  text-decoration: underline;
+}
+
+.post-description {
+  color: #666;
+  font-style: italic;
+  margin-bottom: 0;
+  line-height: 1.5;
+}
+
 body {
   font-family: "Lato";
   /*color: #1f1f1f;*/

@@ -1,32 +1,31 @@
 {
   "articles": [
     {
-      "path": "about.html",
-      "title": "About this blog",
-      "description": "Course notes will go here.",
+      "path": "compile.html",
+      "title": "Compile Course Notes",
       "author": [],
-      "contents": "\n\n\n\n",
-      "last_modified": "2025-08-13T15:51:44-05:00"
+      "contents": "\n\n\n\n\n\n\n\n\nStatistical Data Visualization\n\n\nHome\nNotes\n☰\n\n\n  \n    \n      \n        \n        \n        \n      \n      \n    \n    \n      \n  Home\n\n\n  Notes\n\n      \n  \n\n\n\n\n\n\nCompile Course Notes\n\n\n\n\nRun this from the stat436_notes root directory to compile all course\nnotes.\n\nClean up previous builds\n# Remove any existing HTML files in post directories\nunlink(list.files(\"_posts\", pattern = \"*.html\", recursive = TRUE, full.names = TRUE))\n\n# Clear cache directories\nsystem(\"find _posts -type d -name '*cache*' -exec rm -rf {} +\")\nsystem(\"find _posts -type d -name '*files*' -exec rm -rf {} +\")\n\n\nCompile individual posts\nlibrary(tidyverse)\nlibrary(rmarkdown)\nlibrary(distill)\n\n# Find all .Rmd files in _posts subdirectories\nfiles <- list.files(path = \"_posts\", pattern = \"*.Rmd\", recursive = TRUE, full.names = TRUE)\n\n# Exclude the compile script itself\nfiles <- setdiff(files, c(\"_posts/compile.Rmd\"))\n\n# Render each individual post\ncat(\"Found\", length(files), \"files to render:\\n\")\nfor (i in seq_along(files)) {\n  cat(\"Rendering\", i, \"of\", length(files), \":\", files[i], \"\\n\")\n  tryCatch({\n    render(files[i])\n  }, error = function(e) {\n    cat(\"Error rendering\", files[i], \":\", e$message, \"\\n\")\n  })\n}\n\n\nRender the full site\n# Now render the complete site\nrender_site()\n\n\nInstructions\nTo use this script:\nMake sure you’re in the root directory of your project\nRun each chunk manually or knit this document\nCheck the docs/ directory for the compiled site\nThe script will: - Clean up any previous builds - Render each\nindividual course note - Compile the main site with proper\nnavigation\n\n\n\n\n\n\n\n\n\n\n\n",
+      "last_modified": "2025-08-13T17:04:13-05:00"
     },
     {
       "path": "index.html",
       "title": "Statistical Data Visualization",
-      "description": "STAT 479 Spring 2021",
+      "description": "University of Wisconsin-Madison",
       "author": [
         {
           "name": "Kris Sankaran",
           "url": {}
         }
       ],
-      "contents": "\n\nContents\nReadings\nLectures\n\nThe official syllabus, which gives requirements, learning objectives, and\ngrading mechanisms, is available\nhere.\nThis website only includes links to the reading and lecture content – the\ncourse structure is mapped out fully on the Canvas\nhomepage.\nReadings\nWeek\nTopic\nReading\n1 \nMarks and Channels\n(1) Introduction to Data Science: Chapter 7  (2) Data Types, Graphical Marks, and Visual Encoding Channels\n1 (optional)\n\n(1) Data Humanism\n2 \nFaceting and Layout\n(1) Introduction to Data Science: Chapter 9.1 - 9.3, 9.7 (2) Multi-View Composition\n3 \nInteraction\n(1) Visualization Analysis and Design: Chapter 12.1 - 12.3, 13.1 - 13.3 (2) Interaction\n3 (optional)\n\nUp and Down the Ladder of Abstraction\n4 \nData Wrangling\nR for Data Science: Chapter 12\n5 \nQuality Checking\n(1) Getting Started with naniar  (2) Profiler: Integrated Statistical Analysis and Visualization for Data Quality Assessment\n6 \nTime Series\nForecasting Principles and Practice: Chapter 2\n7 \nGeographic Data\nGeographic Data in R: Chapter 2\n8 \nNetwork Data\n(1) Visualization Analysis and Design: Chapter 9  (2) Modern Statistics for Modern Biology: Chapter 10.1 - 10.2\n9 \nClustering\n(1) Intro to Data Science: Chapter 34 (2) Superheat Vignette (2, 3 & 6)  (3) Cluster Analysis of Genomic Data\n10 \nDimensionality Reduction I\n(1) Beginner’s Guide to Dimensionality Reduction  (2) PCA and UMAP with tidymodels and #TidyTuesday cocktail recipes  (3) Understanding UMAP\n11 \nDimensionality Reduction II\n(1) Text mining with R: Chapter 6  (3) Visualizing the structure of RNA-seq expression data using grade of membership models\n12 \nModel Building\n(1) Partial-dependence Profiles  (2) Visualization in Bayesian workflow\n13 \nVisualizing Deep Learning Models\n(1) Four Experiments in Handwriting with a Neural Network  (2) Visualizing what convnets learn\n13 (optional)\n\nAutomation Makes Us Dumb\n14 \nConclusion\n(1) 655 Frustrations of Doing Data Visualization  (2) Tukey, Design Thinking, and Better Questions\n14 (optional)\n\nA Brief History of Data Visualization\nLectures\nNotes are listed here. Source code and links to recorded videos\nare listed at the top of each set of lecture notes.\n\n\n\n",
-      "last_modified": "2025-08-13T15:51:45-05:00"
+      "contents": "\n\nContents\nBackground Readings\n\nThis website only includes links to the reading and lecture content – the\ncourse assignments, recordings, and discussions are mapped out fully on the\nCanvas homepage.\nBackground Readings\nCourse notes are listed here. Source code and links to recorded\nvideos are listed at the top of each set of lecture notes. While the notes are\nrequired reading, the background texts below are not. We have included them here\nin case you would like to read more deeply into topics introduced in the class.\nWeek\nTopic\nOptional Reading\n1 \nMarks and Channels\n(1) Introduction to Data Science: Chapter 7  (2) Fundamentals of Data Visualization: Chapters 2  (3) Data Humanism\n2 \nData Wrangling\n(1) R for Data Science: Chapter 12 (2) Fundamentals of Data Visualization: Chapter 5\n3 \nFaceting and Layout\n(1) Fundamentals of Data Visualization: Chapter 21 (2) Introduction to Data Science: Chapter 9.1 - 9.3, 9.7\n4 \nInteraction I\n(1) Mastering Shiny: Chapters 3, 4  (2) Visualization Analysis and Design: Chapter 12.1 - 12.3, 13.1 - 13.3  (3) Up and Down the Ladder of Abstraction\n5 \nInteraction II\n(1) Mastering Shiny: Chapter 7  (2) Crosstalk tutorial\n6 \nTime Series\nForecasting Principles and Practice: Chapter 2\n7 \nGeographic Data\nGeographic Data in R: Chapter 2\n8 \nNetwork Data\n(1) Visualization Analysis and Design: Chapter 9  (2) Modern Statistics for Modern Biology: Chapter 10.1 - 10.2\n9 \nClustering\n(1) Intro to Data Science: Chapter 34 (2) Superheat Vignette (2, 3 & 6)  (3) Cluster Analysis of Genomic Data\n10 \nDimensionality Reduction I\n(1) Beginner’s Guide to Dimensionality Reduction  (2) PCA and UMAP with tidymodels and #TidyTuesday cocktail recipes  (3) Understanding UMAP\n11 \nDimensionality Reduction II\n(1) Text mining with R: Chapter 6  (2) Visualizing the structure of RNA-seq expression data using grade of membership models\n12 \nModel Building\n(1) Partial-dependence Profiles  (2) Visualization in Bayesian workflow\n13 \nDeep Learning Models\n(1) Four Experiments in Handwriting with a Neural Network  (2) Visualizing what convnets learn  (3) Agency plus automation: Designing artificial intelligence into interactive systems\n14 \nConclusion\n(1) 655 Frustrations of Doing Data Visualization  (2) Tukey, Design Thinking, and Better Questions  (3) A Brief History of Data Visualization\n\n\n\n",
+      "last_modified": "2025-08-13T17:04:13-05:00"
     },
     {
       "path": "notes.html",
-      "title": "Notes",
+      "title": "Course Notes",
       "author": [],
       "contents": "\n\n\n\n",
-      "last_modified": "2025-08-13T15:51:45-05:00"
+      "last_modified": "2025-08-13T17:04:13-05:00"
     }
   ],
   "collections": ["posts/posts.json"]

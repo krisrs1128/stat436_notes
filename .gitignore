@@ -1,0 +1,21 @@
+/.quarto/
+
+# R Markdown cache files (can be very large)
+*_cache/
+*.rdb
+*.rdx
+*.RData
+
+# Other R files
+.Rproj.user/
+.Rhistory
+.RData
+.Ruserdata
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*~
+*.tmp
