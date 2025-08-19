@@ -25,7 +25,7 @@ theme_set(theme_bw())
 
 1. A dataset is called tidy if rows correspond to distinct observations and columns correspond to distinct variables.
 
-![](tidy-1.png)
+![](https://krisrs1128.github.io/stat436_s25/posts/2024-12-27-week02-01/tidy-1.png)
 
 2. For visualization, it is important that data be in tidy format. This is because (a) each visual mark will be associated with a row of the dataset and (b) properties of the visual marks will determined by values within the columns. A plot that is easy to create when the data are in tidy format might be very hard to create otherwise.
 3. The tidy data might seem like an idea so natural that it’s not worth teaching (let alone formalizing). However, exceptions are encountered frequently, and it’s important that you be able to spot them. Further, there are now many utilities for "tidying" data, and they are worth becoming familiar with.
