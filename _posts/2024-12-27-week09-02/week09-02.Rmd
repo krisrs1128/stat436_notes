@@ -39,7 +39,7 @@ implicitly store many clusterings at once. You can get a standard clustering by
 cutting the tree at some level.
 
 ```{r, echo = FALSE, fig.cap = "We can recover clusters at different levels of granularity, by cutting a hierarchical clustering tree.", out.width=600}
-include_graphics("figure/hclust_cutting.png")
+include_graphics("_posts/figure/hclust_cutting.png")
 ```
 
 3. These hierarchical clustering trees can be thought of abstract versions of

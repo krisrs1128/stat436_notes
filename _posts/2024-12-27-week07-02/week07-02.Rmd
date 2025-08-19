@@ -107,8 +107,8 @@ This makes the plot, using `dplyr` to filter down to just the row containing the
 India geometry.
 
 ```{r}
-india_geom <- world %>%
-  filter(name_long == "India") %>%
+india_geom <- world |>
+  filter(name_long == "India") |>
   st_geometry()
 
 plot(india_geom)
@@ -117,7 +117,7 @@ plot(india_geom)
 6. Using base R, we can also layer on several vector objects, using `add = TRUE`.
 
 ```{r}
-world_asia <- world %>%
+world_asia <- world |>
   filter(continent == "Asia")
 
 plot(india_geom, expandBB = c(0, 0.2, 0.1, 1), col = "gray", lwd = 3)
@@ -177,7 +177,7 @@ Alternatively, we can facet.
 ```{r}
 tm_shape(basemap) +
   tm_rgb() +
-  tm_shape(bus) +
-  tm_lines(col = "operator", size = 1) +
-  tm_facets("operator")
+  tm_shape(filter(bus, !is.na(operator))) +
+  tm_lines(col = "#bc7ab3", size = 1) +
+  tm_facets(by = "operator")
 ```
