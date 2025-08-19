@@ -1,6 +1,12 @@
 {
   "articles": [
     {
+      "path": "compile.html",
+      "author": [],
+      "contents": "\n\n\n\n",
+      "last_modified": "2025-08-19T18:34:06-05:00"
+    },
+    {
       "path": "index.html",
       "title": "Statistical Data Visualization",
       "description": "University of Wisconsin-Madison",
@@ -11,14 +17,14 @@
         }
       ],
       "contents": "\n\nContents\nBackground Readings\n\nThis website only includes links to the reading and lecture content – the\ncourse assignments, recordings, and discussions are mapped out fully on the\nCanvas homepage.\nBackground Readings\nCourse notes are listed here. Source code and links to recorded\nvideos are listed at the top of each set of lecture notes. While the notes are\nrequired reading, the background texts below are not. We have included them here\nin case you would like to read more deeply into topics introduced in the class.\nWeek\nTopic\nOptional Reading\n1 \nMarks and Channels\n(1) Introduction to Data Science: Chapter 7  (2) Fundamentals of Data Visualization: Chapters 2  (3) Data Humanism\n2 \nData Wrangling\n(1) R for Data Science: Chapter 12 (2) Fundamentals of Data Visualization: Chapter 5\n3 \nFaceting and Layout\n(1) Fundamentals of Data Visualization: Chapter 21 (2) Introduction to Data Science: Chapter 9.1 - 9.3, 9.7\n4 \nInteraction I\n(1) Mastering Shiny: Chapters 3, 4  (2) Visualization Analysis and Design: Chapter 12.1 - 12.3, 13.1 - 13.3  (3) Up and Down the Ladder of Abstraction\n5 \nInteraction II\n(1) Mastering Shiny: Chapter 7  (2) Crosstalk tutorial\n6 \nTime Series\nForecasting Principles and Practice: Chapter 2\n7 \nGeographic Data\nGeographic Data in R: Chapter 2\n8 \nNetwork Data\n(1) Visualization Analysis and Design: Chapter 9  (2) Modern Statistics for Modern Biology: Chapter 10.1 - 10.2\n9 \nClustering\n(1) Intro to Data Science: Chapter 34 (2) Superheat Vignette (2, 3 & 6)  (3) Cluster Analysis of Genomic Data\n10 \nDimensionality Reduction I\n(1) Beginner’s Guide to Dimensionality Reduction  (2) PCA and UMAP with tidymodels and #TidyTuesday cocktail recipes  (3) Understanding UMAP\n11 \nDimensionality Reduction II\n(1) Text mining with R: Chapter 6  (2) Visualizing the structure of RNA-seq expression data using grade of membership models\n12 \nModel Building\n(1) Partial-dependence Profiles  (2) Visualization in Bayesian workflow\n13 \nDeep Learning Models\n(1) Four Experiments in Handwriting with a Neural Network  (2) Visualizing what convnets learn  (3) Agency plus automation: Designing artificial intelligence into interactive systems\n14 \nConclusion\n(1) 655 Frustrations of Doing Data Visualization  (2) Tukey, Design Thinking, and Better Questions  (3) A Brief History of Data Visualization\n\n\n\n",
-      "last_modified": "2025-08-19T17:35:19-05:00"
+      "last_modified": "2025-08-19T18:34:07-05:00"
     },
     {
       "path": "notes.html",
       "title": "Course Notes",
       "author": [],
       "contents": "\n\n\n\n",
-      "last_modified": "2025-08-19T17:35:19-05:00"
+      "last_modified": "2025-08-19T18:34:07-05:00"
     }
   ],
   "collections": ["posts/posts.json"]
