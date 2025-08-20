@@ -1,5 +1,5 @@
 
-Run this from the website/stat436_s24 root directory
+Run this from the website/stat436_notes root directory
 
 ```{r}
 library(tidyverse)
