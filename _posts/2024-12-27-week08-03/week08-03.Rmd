@@ -16,7 +16,7 @@ date: '2024-12-02'
 knitr::opts_chunk$set(cache = FALSE, message = FALSE, warning = FALSE, echo = TRUE)
 ```
 
-_[Reading](https://search.library.wisc.edu/catalog/9911196629502121) (Chapter 9), [Recording](https://mediaspace.wisc.edu/media/Week%208%20%5B3%5D%20Adjacency%20Matrix%20Views/1_awa2aoj0), [Rmarkdown](https://github.com/krisrs1128/stat436_s24/blob/main/notes/2024-12-27-week08-03.Rmd)_
+_[Reading](https://search.library.wisc.edu/catalog/9911196629502121) (Chapter 9), [Recording](https://mediaspace.wisc.edu/media/Week%208%20%5B3%5D%20Adjacency%20Matrix%20Views/1_awa2aoj0), [Rmarkdown](https://github.com/krisrs1128/stat436_notes/blob/main/notes/2024-12-27-week08-03.Rmd)_
 
 ```{r}
 library(tidyverse)

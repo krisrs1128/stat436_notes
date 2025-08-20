@@ -12,7 +12,7 @@ output:
 date: '2024-12-12'
 ---
 
-_[Reading](https://otexts.com/fpp3/seasonal-plots.html), [Recording](https://mediaspace.wisc.edu/media/Week%206%20%5B3%5D%20Seasonal%20Plots/1_vbhlrnx5), [Rmarkdown](https://github.com/krisrs1128/stat436_s24/blob/main/notes/2024-12-27-week06-03.Rmd)_
+_[Reading](https://otexts.com/fpp3/seasonal-plots.html), [Recording](https://mediaspace.wisc.edu/media/Week%206%20%5B3%5D%20Seasonal%20Plots/1_vbhlrnx5), [Rmarkdown](https://github.com/krisrs1128/stat436_notes/blob/main/notes/2024-12-27-week06-03.Rmd)_
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(cache = FALSE, message = FALSE, warning = FALSE, echo = TRUE)

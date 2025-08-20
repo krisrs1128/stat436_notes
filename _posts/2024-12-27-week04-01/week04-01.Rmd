@@ -12,7 +12,7 @@ output:
 date: '2024-12-21'
 ---
 
-[Recording](https://mediaspace.wisc.edu/media/Week+2+-+1A+Elements+of+a+Shiny+App/1_rlzn96xp), [Code](https://github.com/krisrs1128/stat436_s24/blob/main/notes/2024-12-27-week04-01.Rmd)
+[Recording](https://mediaspace.wisc.edu/media/Week+2+-+1A+Elements+of+a+Shiny+App/1_rlzn96xp), [Code](https://github.com/krisrs1128/stat436_notes/blob/main/notes/2024-12-27-week04-01.Rmd)
 
 ```{r, echo = FALSE}
 library(knitr)

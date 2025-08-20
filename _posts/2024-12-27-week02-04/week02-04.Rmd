@@ -12,7 +12,7 @@ output:
 date: '2024-12-26'
 ---
 
-_[Reading](https://r4ds.had.co.nz/tidy-data.html), [Recording](https://mediaspace.wisc.edu/media/Week%204%20%5B4%5D%20Tidy%20Data%20Example/1_5qy0fl9h), [Rmarkdown](https://github.com/krisrs1128/stat436_s24/blob/main/notes/2024-12-27-week02-04.Rmd)_
+_[Reading](https://r4ds.had.co.nz/tidy-data.html), [Recording](https://mediaspace.wisc.edu/media/Week%204%20%5B4%5D%20Tidy%20Data%20Example/1_5qy0fl9h), [Rmarkdown](https://github.com/krisrs1128/stat436_notes/blob/main/notes/2024-12-27-week02-04.Rmd)_
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(cache = FALSE, message = FALSE, warning = FALSE, echo = TRUE)

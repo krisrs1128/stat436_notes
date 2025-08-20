@@ -16,7 +16,7 @@ date: '2024-12-24'
 knitr::opts_chunk$set(cache = FALSE, message = FALSE, warning = FALSE, echo = TRUE)
 ```
 
-_[Reading](https://rafalab.github.io/dsbook/gapminder.html), [Recording](https://mediaspace.wisc.edu/media/1_9kea0t1o),  [Rmarkdown](https://github.com/krisrs1128/stat436_s24/blob/main/notes/2024-12-27-week03-02.Rmd)_
+_[Reading](https://rafalab.github.io/dsbook/gapminder.html), [Recording](https://mediaspace.wisc.edu/media/1_9kea0t1o),  [Rmarkdown](https://github.com/krisrs1128/stat436_notes/blob/main/notes/2024-12-27-week03-02.Rmd)_
 
 Ridge plots are a special case of small multiples that are particularly suited
 to displaying multiple parallel time series or densities.

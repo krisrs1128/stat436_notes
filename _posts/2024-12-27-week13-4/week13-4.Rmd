@@ -17,7 +17,7 @@ library("knitr")
 opts_chunk$set(cache = FALSE, message = FALSE, warning = FALSE, echo = TRUE)
 ```
 
-_[Reading](https://jjallaire.github.io/deep-learning-with-r-notebooks/notebooks/5.4-visualizing-what-convnets-learn.nb.html), [Recording](https://mediaspace.wisc.edu/media/Week%2013%20%5B4%5D%20%20Optimizing%20Feature%20Maps/1_2wu0e8qy), [Rmarkdown](https://github.com/krisrs1128/stat436_s24/blob/main/notes/2024-12-27-week13-4.Rmd)_
+_[Reading](https://jjallaire.github.io/deep-learning-with-r-notebooks/notebooks/5.4-visualizing-what-convnets-learn.nb.html), [Recording](https://mediaspace.wisc.edu/media/Week%2013%20%5B4%5D%20%20Optimizing%20Feature%20Maps/1_2wu0e8qy), [Rmarkdown](https://github.com/krisrs1128/stat436_notes/blob/main/notes/2024-12-27-week13-4.Rmd)_
 
 ```{r}
 library("dplyr")

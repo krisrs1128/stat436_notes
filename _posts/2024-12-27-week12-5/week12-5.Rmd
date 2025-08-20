@@ -17,7 +17,7 @@ library("knitr")
 opts_chunk$set(cache = TRUE, message = FALSE, warning = FALSE, echo = TRUE)
 ```
 
-_[Reading](https://arxiv.org/abs/1709.01449), [Recording](https://mediaspace.wisc.edu/media/Week%2012%20%5B5%5D%20Pointwise%20Diagnostics/1_hpoqug2d), [Rmarkdown](https://github.com/krisrs1128/stat436_s24/blob/main/notes/2024-12-27-week12-5.Rmd)_
+_[Reading](https://arxiv.org/abs/1709.01449), [Recording](https://mediaspace.wisc.edu/media/Week%2012%20%5B5%5D%20Pointwise%20Diagnostics/1_hpoqug2d), [Rmarkdown](https://github.com/krisrs1128/stat436_notes/blob/main/notes/2024-12-27-week12-5.Rmd)_
 
 ```{r}
 library(tidyverse)

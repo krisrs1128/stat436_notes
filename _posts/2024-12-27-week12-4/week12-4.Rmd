@@ -17,7 +17,7 @@ library("knitr")
 opts_chunk$set(cache = FALSE, message = FALSE, warning = FALSE, echo = TRUE)
 ```
 
-_[Reading](https://arxiv.org/abs/1709.01449), [Recording](https://mediaspace.wisc.edu/media/Week%2012%20%5B4%5D%20Prior%20and%20Posterior%20Predictives/1_zkurrjtj), [Rmarkdown](https://github.com/krisrs1128/stat436_s24/blob/main/notes/2024-12-27-week12-4.Rmd)_
+_[Reading](https://arxiv.org/abs/1709.01449), [Recording](https://mediaspace.wisc.edu/media/Week%2012%20%5B4%5D%20Prior%20and%20Posterior%20Predictives/1_zkurrjtj), [Rmarkdown](https://github.com/krisrs1128/stat436_notes/blob/main/notes/2024-12-27-week12-4.Rmd)_
 
 ```{r}
 library(tidyverse)

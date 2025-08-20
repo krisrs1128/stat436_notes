@@ -10,7 +10,7 @@ date: '2024-12-18'
 ---
 
 
-[Code](https://github.com/krisrs1128/stat436_s24/blob/main/notes/2024-12-27-week05-01.Rmd), [Recording](https://mediaspace.wisc.edu/media/Week%205%20%5B2%5D%20Graphical%20Queries%3A%20Click%20Events/1_lmlkeubk)
+[Code](https://github.com/krisrs1128/stat436_notes/blob/main/notes/2024-12-27-week05-01.Rmd), [Recording](https://mediaspace.wisc.edu/media/Week%205%20%5B2%5D%20Graphical%20Queries%3A%20Click%20Events/1_lmlkeubk)
 
 ```{r, echo = FALSE}
 library(knitr)

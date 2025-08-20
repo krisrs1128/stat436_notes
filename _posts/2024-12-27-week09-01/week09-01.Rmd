@@ -16,7 +16,7 @@ date: '2024-11-30'
 knitr::opts_chunk$set(cache = FALSE, message = FALSE, warning = FALSE, echo = TRUE)
 ```
 
-_[Reading](https://rafalab.github.io/dsbook/clustering.html), [Recording](https://mediaspace.wisc.edu/media/Week%209%20%5B1%5D%20K-means/1_vegn8x9q), [Rmarkdown](https://github.com/krisrs1128/stat436_s24/blob/main/notes/2024-12-27-week09-01.Rmd)_
+_[Reading](https://rafalab.github.io/dsbook/clustering.html), [Recording](https://mediaspace.wisc.edu/media/Week%209%20%5B1%5D%20K-means/1_vegn8x9q), [Rmarkdown](https://github.com/krisrs1128/stat436_notes/blob/main/notes/2024-12-27-week09-01.Rmd)_
 
 ```{r}
 library("dslabs")
