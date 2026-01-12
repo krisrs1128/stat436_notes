@@ -119,7 +119,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"character","attributes":{},"value":["week03-01_files/anchor-4.2.2/anchor.min.js","week03-01_files/bowser-1.9.3/bowser.min.js","week03-01_files/distill-2.2.21/template.v2.js","week03-01_files/figure-html5/unnamed-chunk-2-1.png","week03-01_files/figure-html5/unnamed-chunk-3-1.png","week03-01_files/figure-html5/unnamed-chunk-4-1.png","week03-01_files/figure-html5/unnamed-chunk-5-1.png","week03-01_files/figure-html5/unnamed-chunk-7-1.png","week03-01_files/figure-html5/unnamed-chunk-8-1.png","week03-01_files/figure-html5/unnamed-chunk-9-1.png","week03-01_files/header-attrs-2.29/header-attrs.js","week03-01_files/jquery-3.6.0/jquery-3.6.0.js","week03-01_files/jquery-3.6.0/jquery-3.6.0.min.js","week03-01_files/jquery-3.6.0/jquery-3.6.0.min.map","week03-01_files/popper-2.6.0/popper.min.js","week03-01_files/tippy-6.2.7/tippy-bundle.umd.min.js","week03-01_files/tippy-6.2.7/tippy-light-border.css","week03-01_files/tippy-6.2.7/tippy.css","week03-01_files/tippy-6.2.7/tippy.umd.min.js","week03-01_files/webcomponents-2.0.0/webcomponents.js"]}
+  {"type":"character","attributes":{},"value":["week03-01_files/anchor-4.2.2/anchor.min.js","week03-01_files/bowser-1.9.3/bowser.min.js","week03-01_files/distill-2.2.21/template.v2.js","week03-01_files/figure-html5/unnamed-chunk-2-1.png","week03-01_files/figure-html5/unnamed-chunk-3-1.png","week03-01_files/figure-html5/unnamed-chunk-4-1.png","week03-01_files/figure-html5/unnamed-chunk-5-1.png","week03-01_files/figure-html5/unnamed-chunk-7-1.png","week03-01_files/figure-html5/unnamed-chunk-8-1.png","week03-01_files/figure-html5/unnamed-chunk-9-1.png","week03-01_files/header-attrs-2.29/header-attrs.js","week03-01_files/header-attrs-2.30/header-attrs.js","week03-01_files/jquery-3.6.0/jquery-3.6.0.js","week03-01_files/jquery-3.6.0/jquery-3.6.0.min.js","week03-01_files/jquery-3.6.0/jquery-3.6.0.min.map","week03-01_files/popper-2.6.0/popper.min.js","week03-01_files/tippy-6.2.7/tippy-bundle.umd.min.js","week03-01_files/tippy-6.2.7/tippy-light-border.css","week03-01_files/tippy-6.2.7/tippy.css","week03-01_files/tippy-6.2.7/tippy.umd.min.js","week03-01_files/webcomponents-2.0.0/webcomponents.js"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
   <!--/radix_placeholder_navigation_in_header-->
@@ -1501,7 +1501,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </script>
 
   <!--/radix_placeholder_distill-->
-  <script src="week03-01_files/header-attrs-2.29/header-attrs.js"></script>
+  <script src="week03-01_files/header-attrs-2.30/header-attrs.js"></script>
   <script src="week03-01_files/jquery-3.6.0/jquery-3.6.0.min.js"></script>
   <script src="week03-01_files/popper-2.6.0/popper.min.js"></script>
   <link href="week03-01_files/tippy-6.2.7/tippy.css" rel="stylesheet" />
@@ -1558,13 +1558,13 @@ another.</p>
 data is the idea of small multiples. It turns out that our eyes are pretty good
 at making sense of many small plots, as long as there is some shared structure
 across the plots.</p>
-<p><img src="https://krisrs1128.github.io/stat479/posts/2021-01-20-week2-1/assets/sparklines.png" /></p>
+<p><img src="https://github.com/krisrs1128/stat436_notes/blob/gh-pages/assets/sparklines.png?raw=true" /></p>
 <p>Let’s see these ideas in action. These are libraries we need.</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
 <pre class="sourceCode r"><code class="sourceCode r"><span><span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://tidyverse.tidyverse.org'>tidyverse</a></span><span class='op'>)</span></span>
 <span><span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'>dslabs</span><span class='op'>)</span></span>
-<span><span class='fu'><a href='https://ggplot2.tidyverse.org/reference/theme_get.html'>theme_set</a></span><span class='op'>(</span><span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggtheme.html'>theme_bw</a></span><span class='op'>(</span><span class='op'>)</span><span class='op'>)</span></span></code></pre>
+<span><span class='fu'><a href='https://ggplot2.tidyverse.org/reference/get_theme.html'>theme_set</a></span><span class='op'>(</span><span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggtheme.html'>theme_bw</a></span><span class='op'>(</span><span class='op'>)</span><span class='op'>)</span></span></code></pre>
 </div>
 </div>
 <p>In ggplot2, we can implement this idea using the <code>facet_wrap</code> and <code>facet_grid</code>
@@ -1578,7 +1578,7 @@ generate comparable small multiples.</p>
 <span>  <span class='fu'><a href='https://dplyr.tidyverse.org/reference/filter.html'>filter</a></span><span class='op'>(</span><span class='va'>year</span> <span class='op'><a href='https://rdrr.io/r/base/match.html'>%in%</a></span> <span class='va'>years</span>, <span class='va'>continent</span> <span class='op'><a href='https://rdrr.io/r/base/match.html'>%in%</a></span> <span class='va'>continents</span><span class='op'>)</span></span>
 <span></span>
 <span><span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span><span class='op'>(</span></span>
-<span>    <span class='va'>gapminder_subset</span>, </span>
+<span>    <span class='va'>gapminder_subset</span>,</span>
 <span>    <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span><span class='op'>(</span><span class='va'>fertility</span>, <span class='va'>life_expectancy</span>, col <span class='op'>=</span> <span class='va'>continent</span><span class='op'>)</span></span>
 <span>  <span class='op'>)</span> <span class='op'>+</span></span>
 <span>  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_point.html'>geom_point</a></span><span class='op'>(</span><span class='op'>)</span> <span class='op'>+</span></span>
@@ -1592,7 +1592,7 @@ or columns, depending on whether you put the variable before or after the tilde.
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
 <pre class="sourceCode r"><code class="sourceCode r"><span><span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span><span class='op'>(</span></span>
-<span>    <span class='va'>gapminder_subset</span>, </span>
+<span>    <span class='va'>gapminder_subset</span>,</span>
 <span>    <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span><span class='op'>(</span><span class='va'>fertility</span>, <span class='va'>life_expectancy</span>, col <span class='op'>=</span> <span class='va'>continent</span><span class='op'>)</span></span>
 <span>  <span class='op'>)</span> <span class='op'>+</span></span>
 <span>  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_point.html'>geom_point</a></span><span class='op'>(</span><span class='op'>)</span> <span class='op'>+</span></span>

@@ -28,7 +28,8 @@ data is the idea of small multiples. It turns out that our eyes are pretty good
 at making sense of many small plots, as long as there is some shared structure
 across the plots.
 
-![](https://krisrs1128.github.io/stat479/posts/2021-01-20-week2-1/assets/sparklines.png)
+![](https://github.com/krisrs1128/stat436_notes/blob/gh-pages/assets/sparklines.png?raw=true)
+
 
 Let's see these ideas in action. These are libraries we need.
 
@@ -48,7 +49,7 @@ gapminder_subset <- gapminder %>%
   filter(year %in% years, continent %in% continents)
 
 ggplot(
-    gapminder_subset, 
+    gapminder_subset,
     aes(fertility, life_expectancy, col = continent)
   ) +
   geom_point() +
@@ -60,15 +61,15 @@ or columns, depending on whether you put the variable before or after the tilde.
 
 ```{r, fig.width = 3, fig.height = 8}
 ggplot(
-    gapminder_subset, 
+    gapminder_subset,
     aes(fertility, life_expectancy, col = continent)
   ) +
   geom_point() +
   facet_grid(year ~ .) +
   theme(legend.position = "bottom")
 ```
- 
- 
+
+
 You can also facet by more than one variable at a time, specifying which
 variables should go in rows and which should go in columns again using the
 tilde.

@@ -97,7 +97,7 @@ compare the athlete physiology dataset with and without the collected legends,
 
     ```{r}
     (p[["bar"]] + p[["scatter"]]) / p[["box"]] +
-          plot_layout(guides = "collect") &
+          plot_layout(guides = "collect") +
           plot_annotation(theme = theme(legend.position = "bottom"))
     ```
   
